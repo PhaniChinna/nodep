@@ -1,0 +1,25 @@
+GET http://localhost:8000/book
+
+
+####
+
+GET http://localhost:8000/book/3
+
+
+#### 
+POST http://localhost:8000/book
+// with this we have to push data to server
+Content-Type: application/json 
+
+{
+    "id" : 8,
+    "isbn" : 108,
+    "authorName" : "ayana",
+    "bookName" : "Phi  From Server",
+    "pages" : 200,
+    "price" : 1900
+}
+
+
+####
+DELETE http://localhost:8000/book/3
